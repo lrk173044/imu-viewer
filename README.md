@@ -65,6 +65,7 @@ MPU9250原始数据 → 卡尔曼滤波融合 → 稳定欧拉角(Pitch/Roll/Yaw
 ```
 
 ---
+<img width="2274" height="1279" alt="ed217d76400a2298f0a2938a00e2defe" src="https://github.com/user-attachments/assets/a595a769-5ed0-48da-8f7b-c80a3cd25ee6" />
 
 # 代码部分
 
@@ -637,6 +638,10 @@ pm2 save
 远程姿态监测系统。
 
 ---
+
+
+https://github.com/user-attachments/assets/fd0ce1d7-8600-445f-b52c-c09b466cea4a
+
 
 # 后续可扩展方向
 
