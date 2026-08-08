@@ -1,13 +1,4 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191110102MACQD9K64018705
-    ProduceID: 3607933407723820_0/project_7668959817712779574-files/README.md
-    ReservedCode1: ""
-    ContentPropagator: 001191110102MACQD9K64028705
-    PropagateID: 3607933407723820#1786154443001
-    ReservedCode2: ""
----
+
 # 基于 STM32 + MPU9250 + 卡尔曼滤波 + 4G DTU + 腾讯云 的远程姿态监测系统
 
 ## 项目简介
@@ -29,46 +20,14 @@ AIGC:
 ---
 
 # 系统整体架构
-
-<<<<<<< HEAD
-=======
-
-
+# 系统整体架构
 ```mermaid
 graph LR
-
-A[MPU9250<br>九轴传感器]
---> |IIC|
-B[STM32<br>卡尔曼滤波<br>四元数解算]
-
-B --> |串口|
-C[4G DTU<br>TCP透传]
-
-C --> |4G网络|
-D[腾讯云服务器<br>Node.js]
-
-D --> |WebSocket|
-E[Three.js<br>3D姿态显示]
-
-E --> 
-F[Android App<br>WebView]
-```
-
-
->>>>>>> temp-fix
-```mermaid
-graph LR
-A["MPU9250<br>九轴传感器"] -->|IIC| B["STM32<br>卡尔曼滤波<br>四元数解算"]
-B -->|UART串口| C["4G DTU<br>TCP透传"]
-C -->|4G网络| D["腾讯云服务器<br>Node.js"]
-D -->|WebSocket| E["Three.js<br>3D姿态显示"]
+A["MPU9250<br>九轴传感器"] --> |IIC| B["STM32<br>卡尔曼滤波<br>四元数解算"]
+B --> |UART串口| C["4G DTU<br>TCP透传"]
+C --> |4G网络| D["腾讯云服务器<br>Node.js"]
+D --> |WebSocket| E["Three.js<br>3D姿态显示"]
 E --> F["Android App<br>WebView"]
-```
-<<<<<<< HEAD
-=======
-
->>>>>>> temp-fix
-
 ---
 
 # 系统硬件组成
