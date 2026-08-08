@@ -19,16 +19,6 @@
 
 ---
 
-# 系统整体架构
-# 系统整体架构
-```mermaid
-graph LR
-A["MPU9250<br>九轴传感器"] --> |IIC| B["STM32<br>卡尔曼滤波<br>四元数解算"]
-B --> |UART串口| C["4G DTU<br>TCP透传"]
-C --> |4G网络| D["腾讯云服务器<br>Node.js"]
-D --> |WebSocket| E["Three.js<br>3D姿态显示"]
-E --> F["Android App<br>WebView"]
----
 
 # 系统硬件组成
 
